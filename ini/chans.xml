@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Work stable: Wakaba, Kusaba
+	Work unstable: Hanabira, Futaba
+	You can use regexp in messages
+	
+	Have a nice day hauu~
+	
+	-->
+<chans>
+	<!--Мочан-->
+	<chan>
+		<ChanName 	value="Мочан" 				 />
+		<ChanType 	value="Wakaba"				 />
+		<ChanHost 	value="http://2ch.so"		 />
+		<ChanPosts  value="[%host][%b]"			 />
+		<ScriptPath value="[%host][%b]wakaba.pl" />
+		
+		<CaptchaPath value="[%host]/MocheCaptcha" />
+		<CaptchaType value="png"							/>
+		
+		<post 	 value="post" 	/>
+		<task 	 value="task" 	/>
+		<retName value="gb2" 	/>
+		<retMode value="thread" />
+		
+		<FieldEmail 	   value="nabiki"	/>
+		<FieldName         value="akane"	/>
+		<FieldCaptcha 	   value="recaptcha_response_field"	/>
+		<FieldPassword 	   value="password"	/>
+		<FieldFile         value="file"		/>
+		<FieldMessage 	   value="shampoo"	/>
+		<FieldTheme 	   value="kasumi"	/>
+		<FieldThreadNumber value="parent"	/>
+		
+		<MessageBan 			  value="с этого ip закрыт"				 />
+		<MessageInvalidCaptcha 	  value="од подтверждения"				 />
+		<MessageError 			  value="font size="						 />
+		<MessageSuccessful 		  value=""   							 />
+		<MessageIncorrectPassword value="Incorrect password for deletion"/>
+		
+		<BoardReplayTag 	value="Ответ"										  />
+		<BoardReplayClass 	value="reply"										  />
+		<RequestDeletePost 	value="delete=[%id]&amp;task=delete&amp;password=[%p]"/>
+	</chan>
+	<!--Ычан-->
+	<chan>
+		<ChanName 	value="Ичан"						 />
+		<ChanType 	value="Wakaba"						 />
+		<ChanHost 	value="http://iichan.ru"			 />
+		<ChanPosts 	value="[%host][%b]"					 />
+		<ScriptPath value="[%host]/cgi-bin/wakaba.pl[%b]"/>
+		
+		<CaptchaPath value="[%host]/cgi-bin/captcha.pl[%b]?key=[%t]"/>
+		<CaptchaType value="gif"									/>
+		
+		<post 	 value="post"		/>
+		<task 	 value="task"		/>
+		<retName value="postredir"	/>
+		<retMode value="1"			/>
+		
+		<FieldEmail 	value="nya2"	 />
+		<FieldName 		value="nay1"	 />
+		<FieldCaptcha 	value="captcha"	 />
+		<FieldPassword 	value="password" />
+		
+		<FieldFile 			value="file"	/>
+		<FieldMessage 		value=" nya4"	/>
+		<FieldTheme 		value="nya3"	/>
+		<FieldThreadNumber  value="parent"	/>
+		
+		<MessageBan 			  value="Вам был закрыт доступ к отправке сообщений."/>
+		<MessageInvalidCaptcha 	  value="од подтверждения"					 		 />
+		<MessageError    		  value="Ошибка:"								 	 />
+		<MessageSuccessful 		  value=""											 />
+		<MessageIncorrectPassword value="Введён неверный пароль для удаления."		 />
+		
+		<BoardReplayTag 	value="Ответ"/>
+		<BoardReplayClass 	value="reply"/>
+		<RequestDeletePost  value="delete=[%id]&amp;task=delete&amp;password=[%p]"/>
+	</chan>
+	<!--Нульчан-->
+	<chan>
+		<ChanName 	   value="Нульчан"					/>
+		<ChanType 	   value="Kusaba"						/>
+		<ChanHost 	   value="http://www.0chan.ru"			/>
+		<ChanPosts 	   value="[%host][%b]"					/>
+		<ChanBoardName value="board"						/>
+		<ScriptPath    value="[%host]/board.php?dir=[%b]"   />
+		
+		<CaptchaPath value="[%host]/captcha.php" />	
+		<CaptchaType value="png"				 />
+		
+		<post 	 value=""/>
+		<task 	 value=""/>
+		<retName value=""/>
+		<retMode value=""/>
+		
+		<FieldEmail    value="sage"	   />
+		<FieldName     value="name"	   />
+		<FieldCaptcha  value="captcha" />
+		<FieldPassword value="postpassword"/>
+		
+		<FieldFile 	  value="imagefile" />
+		<FieldMessage value="message" 	/>
+		<FieldTheme   value="subject" 	/>
+		<FieldThreadNumber	   		value="replythread"							/>
+		<FieldBoardName  	value="board"		/>
+		
+		<MessageBan			   		value="Забанен на доск"						/>
+		<MessageInvalidCaptcha 		value="Неправильно введена капча."			/>
+		<MessageError 		   		value="Ошибка"								/>
+		<MessageSuccessful 			value=""	/>
+		<MessageIncorrectPassword	value="Неправильный пароль."			 	/>
+		
+		<BoardReplayTag value="Ответ"/>
+		<BoardReplayClass value="reply"/>
+		<RequestDeletePost value="board=[%b]&amp;delete=[%id]&amp;postpassword=[%p]&amp;deletepost=%D0%A3%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C"/>
+	</chan>
+	<!--Сеймчан-->
+	<chan>
+		<ChanName 		value="Сеймчан"						/>
+		<ChanType 		value="Kusaba"						/>
+		<ChanHost 		value="http://samechan.ru" 			/>
+		<ChanPosts 		value="[%host][%b]" 				/>
+		
+		<ScriptPath 	value="[%host]/board.php?dir=[%b]"  />
+		<CaptchaPath 	value="[%host]/captcha.php"			/>
+		<CaptchaType 	value="png"							/>
+		
+		<post 	 value="" />
+		<task 	 value="" />
+		<retMode value="" />
+		<retName value="" />
+		
+		
+		<FieldEmail 		value="sage"		/>
+		<FieldName 			value="name"		/>
+		<FieldCaptcha 		value="captcha" 	/>
+		<FieldPassword  	value="password" 	/>
+		<FieldFile 			value="imagefile"	/>
+		<FieldMessage 		value="message"		/>
+		<FieldTheme 		value="subject"		/>
+		<FieldThreadNumber  value="replythread" />
+		<FieldBoardName  	value="board"		/>
+		
+		<MessageBan 			  value="Забанен на доск"			 />
+		<MessageInvalidCaptcha    value="Неправильно введена капча." />
+		<MessageError 			  value="Ошибка:"					 />
+		<MessageSuccessful 		  value=""							 />
+		<MessageIncorrectPassword value="Неправильный пароль."		 />
+		
+		<BoardReplayTag 	value="Ответ" 	/>
+		<BoardReplayClass 	value="reply"	/>
+		<RequestDeletePost 	value="" 		/>
+	</chan>
+<!--Ракач-->
+	<chan>
+		<ChanName 	   value="Ракач"					/>
+		<ChanType 	   value="Kusaba"						/>
+		<ChanHost 	   value="http://www.rakach.ru"			/>
+		<ChanPosts 	   value="[%host][%b]"					/>
+		<ChanBoardName value="board"						/>
+		<ScriptPath    value="[%host]/board.php?dir=[%b]"   />
+		
+		<CaptchaPath value="[%host]/captcha.php" />	
+		<CaptchaType value="png"				 />
+		
+		<post 	 value=""/>
+		<task 	 value=""/>
+		<retName value=""/>
+		<retMode value=""/>
+		
+		<FieldEmail    value="sage"	   />
+		<FieldName     value="name"	   />
+		<FieldCaptcha  value="captcha" />
+		<FieldPassword value="postpassword"/>
+		
+		<FieldFile 	  value="imagefile" />
+		<FieldMessage value="message" 	/>
+		<FieldTheme   value="subject" 	/>
+		<FieldThreadNumber	   		value="replythread"							/>
+		<FieldBoardName  	value="board"		/>
+		
+		<MessageBan			   		value="Забанен на доск"						/>
+		<MessageInvalidCaptcha 		value="Неправильно введена капча."			/>
+		<MessageError 		   		value="Ошибка"								/>
+		<MessageSuccessful 			value=""	/>
+		<MessageIncorrectPassword	value="Неправильный пароль."			 	/>
+		
+		<BoardReplayTag value="Ответ"/>
+		<BoardReplayClass value="reply"/>
+		<RequestDeletePost value="board=[%b]&amp;delete=[%id]&amp;postpassword=[%p]&amp;deletepost=%D0%A3%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C"/>
+	</chan>
+</chans>
